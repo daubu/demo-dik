@@ -1,0 +1,108 @@
+/************** Skin 1 *********************/
+.dd {
+	text-align:left;
+	position:relative;
+	width: 100% !important;
+	background: #fff;
+}
+
+.dd .ddTitle {
+	/*background:url(../img/select_box.jpg) no-repeat right top;*/
+	border:0px;
+	text-align:center;
+	text-indent:0;
+	cursor:default;
+	height:50px;
+	position:relative;
+	background: #f1f1f1;
+	border-radius: 4px;
+}
+
+ 
+	
+	
+.dd .ddTitle span.arrow {
+	display: inline-block;
+	font:normal 30px/50px FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #e2e2e2;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    text-align: center;
+    z-index: 999; 
+    font-size: 30px;
+    border-radius: 0 4px 4px 0;
+    &:before {
+	  content: "\f107";
+	  color: #b9b9b9;
+	}
+    
+}
+ 
+
+.dd .ddTitle span span.ddTitleText {
+	overflow:hidden; 
+	font: normal 14px/50px $font;
+	display:block; 
+	margin-right:50px; 
+	text-transform: uppercase;
+	color: $donker;
+	padding: 0 10px 0 20px;
+	text-align: left;
+	@include breakpoint(1100px) {   
+		min-width: 190px;
+	}
+	@include between-breakpoints(100px, 767px) {
+		min-width: 190px; 
+	}
+}
+
+
+
+ 
+.dd .ddChild {
+	position:absolute;
+	border:1px solid #f1f1f1;
+	border-top:none;
+	display:none;
+	margin:0;
+	overflow:auto;
+	background-color:#ffffff;
+	left: -1px;
+    width: 100.6% !important;
+    height: auto !important;
+}
+.dd .ddChild .opta a, .dd .ddChild .opta a:visited {padding-left:10px}
+
+.dd .ddChild a {
+	display:block;
+	padding: 10px;
+	text-decoration:none;
+	color:$donker;
+	overflow:hidden;
+	white-space:nowrap;
+	text-align:center;
+	cursor:pointer;
+	border-bottom:1px solid #f1f1f1;
+	font-size: 15px;
+}
+.dd .ddChild a:hover {
+	background-color:#f1f1f1;
+}
+ 
+.dd .ddChild a.selected {
+	background-color:#f1f1f1;
+	
+}
+.hidden {display:none;}
+
+.dd .borderTop{border-top:1px solid #f1f1f1 !important;}
+.dd .noBorderTop{}
+
+
